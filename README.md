@@ -1,5 +1,5 @@
 # OSCChat
-An OSC Chat Room
+An OSC Chat Room implementing the [OSCMessenger Spec](https://github.com/ETCLabs/OSCMessenger).
 
 ## Authors
 

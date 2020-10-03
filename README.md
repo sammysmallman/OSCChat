@@ -7,6 +7,6 @@ An OSC Chat Room
 
 **Daniel Higgott** - *Initial Work* - [Daniel-Higgott](https://github.com/daniel-higgott)
 
-See also the list of [contributors](https://github.com/SammyTheHand/OSCChat/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/sammysmallman/OSCChat/graphs/contributors) who participated in this project.
 
 ## Acknowledgments

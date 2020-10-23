@@ -11,6 +11,7 @@ struct GlobalView: View {
     
     @EnvironmentObject var service: OSCChatService
     @State private var message: String = ""
+    @State var messages: [Message] = [Message(user: User(name: "Dan", isCurrentUser: true), content: "Hello everyone"), Message(user: User(name: "Kim", isCurrentUser: false), content: "Hello Dan"), Message(user: User(name: "Bob", isCurrentUser: false), content: "Hello World, this is a super long message that should cover a fair number of lines")]
     
     var body: some View {
         VStack {
@@ -23,12 +24,35 @@ struct GlobalView: View {
             }) {
                 Text("Join Multicast Group")
             }
-            TextField("Enter your message here...", text: $message)
-            Button(action: {
-                service.send(message: message)
-            }) {
-                Text("Send")
+            
+            if #available(iOS 14.0, *) {
+                ScrollView {
+                    LazyVStack {
+                        ForEach(messages, id: \.id) { message in
+                            MessageView(message: message)
+                        }
+                    }
+                    
+                }
+                
+            } else {
+                // For iOS 13
+                List(messages) {message in
+                    MessageView(message: message)
+                }
             }
+            
+            TextField("Enter your message here...", text: $message).padding(.all, 5.0)
+                
+                
+            /*
+             Button(action: {
+                 service.send(message: message)
+             }) {
+                 Text("Send")
+             }
+             */
+            
         }
     }
 }

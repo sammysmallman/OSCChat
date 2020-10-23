@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2ED0F7C254328E300508B74 /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED0F79254328E300508B74 /* ContentMessageView.swift */; };
+		A2ED0F7D254328E300508B74 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED0F7A254328E300508B74 /* Model.swift */; };
+		A2ED0F7E254328E300508B74 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED0F7B254328E300508B74 /* MessageView.swift */; };
 		D9391F592522560500CDCF60 /* SideBarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9391F582522560500CDCF60 /* SideBarNavigation.swift */; };
 		D9391F5C2522561600CDCF60 /* TabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9391F5B2522561600CDCF60 /* TabNavigation.swift */; };
 		D9391F5E2522574200CDCF60 /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9391F5D2522574200CDCF60 /* RoomView.swift */; };
@@ -30,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A2ED0F79254328E300508B74 /* ContentMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
+		A2ED0F7A254328E300508B74 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A2ED0F7B254328E300508B74 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		D9391F582522560500CDCF60 /* SideBarNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarNavigation.swift; sourceTree = "<group>"; };
 		D9391F5B2522561600CDCF60 /* TabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigation.swift; sourceTree = "<group>"; };
 		D9391F5D2522574200CDCF60 /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
@@ -86,6 +92,9 @@
 				D9391F5D2522574200CDCF60 /* RoomView.swift */,
 				D9918073253614B400B3D129 /* GlobalView.swift */,
 				D991808E2536173A00B3D129 /* OSCChatService.swift */,
+				A2ED0F79254328E300508B74 /* ContentMessageView.swift */,
+				A2ED0F7B254328E300508B74 /* MessageView.swift */,
+				A2ED0F7A254328E300508B74 /* Model.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -221,12 +230,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2ED0F7D254328E300508B74 /* Model.swift in Sources */,
 				D991808F2536173A00B3D129 /* OSCChatService.swift in Sources */,
 				D9391F592522560500CDCF60 /* SideBarNavigation.swift in Sources */,
 				D9391F5C2522561600CDCF60 /* TabNavigation.swift in Sources */,
+				A2ED0F7E254328E300508B74 /* MessageView.swift in Sources */,
 				D9391F5E2522574200CDCF60 /* RoomView.swift in Sources */,
 				D9918074253614B400B3D129 /* GlobalView.swift in Sources */,
 				D9AF07D1252254CD00B2693B /* ContentView.swift in Sources */,
+				A2ED0F7C254328E300508B74 /* ContentMessageView.swift in Sources */,
 				D9AF07CF252254CD00B2693B /* OSCChatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
